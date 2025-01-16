@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:my_timezone/my_timezone.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -47,7 +49,7 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: <Widget>[
             Text('Local timezone: $_timezone\n'),
-            Text('Available timezones:'),
+            const Text('Available timezones:'),
             Expanded(
               child: ListView.builder(
                 itemCount: _availableTimezones.length,

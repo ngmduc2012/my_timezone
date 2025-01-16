@@ -8,12 +8,15 @@ public class MyTimezonePlugin: NSObject, FlutterPlugin {
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
-  public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
-    default:
-      result(FlutterMethodNotImplemented)
+    public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+        switch call.method {
+        case "getLocalTimezone":
+            let timeZone = TimeZone.current
+            result(timeZone.identifier)
+        case "getAvailableTimezones":
+            result(TimeZone.knownTimeZoneIdentifiers)
+        default:
+            result(FlutterMethodNotImplemented)
+        }
     }
-  }
 }

@@ -1,7 +1,7 @@
 name: my_timezone
-description: "A new Flutter project."
-version: 0.0.1
-homepage:
+description: A flutter plugin for getting the local timezone of the device on Android, ios, macos.
+version: 0.0.1+2
+repository: https://github.com/ngmduc2012/my_timezone
 
 environment:
   sdk: ^3.5.4
@@ -45,7 +45,7 @@ flutter:
       macos:
         pluginClass: MyTimezonePlugin
       web:
-        pluginClass: MyTimezoneWeb
+        pluginClass: MyTimezonePlugin
         fileName: my_timezone_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:

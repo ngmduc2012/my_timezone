@@ -29,7 +29,7 @@ class MyTimezonePlugin {
         throw PlatformException(
             code: 'Unimplemented',
             details:
-            "The flutter_native_timezone plugin for web doesn't implement "
+                "The flutter_native_timezone plugin for web doesn't implement "
                 "the method '${call.method}'");
     }
   }
