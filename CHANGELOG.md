@@ -1,10 +1,14 @@
 # CHANGELOG
 
+## [0.0.3] - 2025-12-31
+- Fix web JS interop lint in the web plugin.
+- Remove unused/discontinued dependencies.
+- Align ignore rules and changelog with pub validation.
+
 ## [0.0.2+5] - 2025-12-31
 - Add coverage workflow and testing for plugin and example.
 - Add short docs (usage/operations) and Makefile helpers.
 - Refresh README and ignore coverage HTML in pub files.
-- Fix web JS interop lint and remove discontinued deps.
 
 ## [0.0.1] - 2025-01-09
 - Finish native function 
