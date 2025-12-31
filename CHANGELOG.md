@@ -4,6 +4,7 @@
 - Add coverage workflow and testing for plugin and example.
 - Add short docs (usage/operations) and Makefile helpers.
 - Refresh README and ignore coverage HTML in pub files.
+- Fix web JS interop lint and remove discontinued deps.
 
 ## [0.0.1] - 2025-01-09
 - Finish native function 

@@ -38,12 +38,12 @@ class MyTimezonePlugin {
   /// local time zone when running on the web.
   ///
   String _getLocalTimeZone() {
-    return jsDateTimeFormat().resolvedOptions().timeZone;
+    return _jsDateTimeFormat().resolvedOptions().timeZone;
   }
 }
 
 @JS('Intl.DateTimeFormat')
-external _JSDateTimeFormat jsDateTimeFormat();
+external _JSDateTimeFormat _jsDateTimeFormat();
 
 @JS()
 abstract class _JSDateTimeFormat {
